@@ -1,0 +1,52 @@
+
+.datepicker {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.datepicker .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datepicker .header .prev-month,
+.datepicker .header .next-month {
+    cursor: pointer;
+}
+
+.datepicker .days-of-week {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.datepicker .days-of-week span {
+    width: 2em;
+    text-align: center;
+}
+
+.datepicker .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.datepicker .dates span {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.datepicker .dates span.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.datepicker .dates span.other-month {
+    color: #ccc;
+}
